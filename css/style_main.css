@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-stretch: normal;
+  outline: none; }
+  * a,
+  *::before a,
+  *::after a {
+    text-decoration: none; }
+  * button,
+  * select,
+  *::before button,
+  *::before select,
+  *::after button,
+  *::after select {
+    cursor: pointer; }
+
+img {
+  max-width: 100%;
+  display: block; }
+
+body {
+  font-size: 18px;
+  margin: 0;
+  padding: 0; }
+  body img {
+    display: block; }
+  body a {
+    text-decoration: none; }
+
+.container {
+  max-width: 66%;
+  margin: 0 auto; }
+
+.main_space .main_content header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 60px 0 50px; }
+  .main_space .main_content header .box_logo {
+    width: 260px; }
+    .main_space .main_content header .box_logo img {
+      width: 100%; }
+
+.main_space .main_content .text_example {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto 70px; }
+  .main_space .main_content .text_example h1 {
+    font-size: 2.3em;
+    margin-bottom: 1em; }
+  .main_space .main_content .text_example p {
+    color: #7b797a;
+    font-size: 1.2em; }
+
+.main_space .main_content .form_space {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2vw; }
+  .main_space .main_content .form_space .form {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    padding: 55px; }
+    .main_space .main_content .form_space .form form .line_input {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-bottom: 1.3em; }
+      .main_space .main_content .form_space .form form .line_input label {
+        font-weight: bold;
+        margin-bottom: .4em;
+        font-size: 1.2em; }
+      .main_space .main_content .form_space .form form .line_input input {
+        padding: .7em 1em;
+        font-size: 1.1em;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 7px; }
+      .main_space .main_content .form_space .form form .line_input input::-webkit-input-placeholder {
+        color: #b0b4bc; }
+      .main_space .main_content .form_space .form form .line_input input:-ms-input-placeholder {
+        color: #b0b4bc; }
+      .main_space .main_content .form_space .form form .line_input input::-ms-input-placeholder {
+        color: #b0b4bc; }
+      .main_space .main_content .form_space .form form .line_input input::placeholder {
+        color: #b0b4bc; }
+    .main_space .main_content .form_space .form form .line_button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .main_space .main_content .form_space .form form .line_button button {
+        background-color: #e03b65;
+        border: 1px solid #e03b65;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.2em;
+        color: #fff;
+        padding: 1em 2.5em;
+        border-radius: 40px; }
+
+footer {
+  height: 100px; }
+
+@media only screen and (max-width: 1400px) {
+  .container {
+    max-width: 86% !important; } }
+
+@media only screen and (max-width: 1024px) {
+  header {
+    padding-bottom: 35px !important; }
+    header .box_logo {
+      width: 150px !important; }
+  .text_example {
+    width: 100% !important;
+    margin: 0 auto 30px !important; }
+    .text_example h1 {
+      font-size: 1.7em !important;
+      margin-bottom: 0.5em !important; }
+  .form_space {
+    position: relative;
+    overflow: hidden; }
+    .form_space .form {
+      -ms-grid-column-span: 2;
+      grid-column: span 2;
+      -ms-grid-row: 1;
+      grid-row: 1;
+      position: relative;
+      z-index: 2;
+      background-color: rgba(255, 255, 255, 0.7) !important; }
+    .form_space .img_form {
+      position: absolute;
+      bottom: 0;
+      right: -150px;
+      bottom: -150px;
+      opacity: .5; } }

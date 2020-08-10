@@ -1,0 +1,41 @@
+
+@media only screen and(max-width: 1400px){
+    .container{
+        max-width: 86%!important;
+    }
+}
+@media only screen and(max-width: 1024px){
+    header{
+        padding-bottom: 35px!important;
+        .box_logo {
+            width: 150px!important;
+        }
+    }
+    .text_example{
+        width: 100%!important;
+        margin: 0 auto 30px!important;
+        h1 {
+            font-size: 1.7em!important;
+            margin-bottom: .5em!important;
+        }
+    }
+    .form_space{
+        position: relative;
+        overflow: hidden;
+        .form{
+            grid-column: span 2;    
+            grid-row: 1;
+            position: relative;
+            z-index: 2;
+            background-color: rgba(255,255,255,.7)!important;
+        }
+        .img_form{
+            position: absolute;
+            bottom: 0;
+            right: -150px;
+            bottom: -150px;
+            opacity: .5;
+
+        }
+    }
+}

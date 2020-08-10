@@ -1,0 +1,91 @@
+@import "_vars";
+
+
+.main_space{
+    .main_content{
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 0 50px;
+            .box_logo{
+                width: 260px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .text_example{
+            text-align: center;
+            width: 80%;
+            margin: 0 auto 70px;
+            h1{
+                font-size: 2.3em;
+                margin-bottom: 1em;
+            }
+            p{
+                color: $grey1_text;
+                font-size: 1.2em;
+            }
+        }
+        .form_space{
+            display: grid;
+            grid-template-columns: $grd2;
+            grid-gap: $gap;
+            .img_form{
+                img{
+    
+                }
+            }
+            .form{
+                background-color: $bg_main;
+                box-shadow: 0px 5px 20px rgba(0,0,0,.15);
+                border-radius: 15px;
+                padding: 55px;
+                form{
+                    .line_input{
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 1.3em;
+                        label{
+                            font-weight: bold;
+                            margin-bottom: .4em;
+                            font-size: 1.2em;
+                        }
+                        input{
+                            padding: .7em 1em;
+                            font-size: 1.1em;
+                            border: 1px solid rgba(0,0,0,.2);
+                            border-radius: 7px;
+                        }
+                        input::placeholder{
+                            color: $grey2_text;
+                        }
+                    } 
+                    .line_button{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        button{
+                            background-color: $button;
+                            border: 1px solid $button;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            font-size: 1.2em;
+                            color: $bg_main;
+                            padding: 1em 2.5em;
+                            border-radius: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    height: 100px;
+}
+
+
+@import "_resp";
